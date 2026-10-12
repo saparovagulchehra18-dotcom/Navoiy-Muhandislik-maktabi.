@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navoiy Muhandislik Maktabi</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#0b1024;color:white;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;background:#10162af2;backdrop-filter:blur(12px);padding:16px 5%;z-index:10;border-bottom:1px solid #ffffff20}
+nav{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.logo{font-weight:bold;font-size:19px}
+.logo span,.gradient{background:linear-gradient(90deg,#45e0ff,#a477ff,#ff69d4);background-clip:text;-webkit-background-clip:text;color:transparent}
+.links{display:flex;gap:16px;flex-wrap:wrap}
+.links a{font-size:13px;color:#d2d9f2}
+.links a:hover{color:#45e0ff}
+.container{width:90%;max-width:1150px;margin:auto}
+section{padding:75px 0;scroll-margin-top:70px}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;min-height:570px}
+.tag{color:#45e0ff;font-size:13px}
+h1{font-size:clamp(38px,5vw,65px);line-height:1.15;margin:20px 0}
+p{color:#bdc7e2}
+.hero p{margin-bottom:25px}
+.btn{display:inline-block;background:linear-gradient(100deg,#45e0ff,#a477ff,#ff69d4);padding:13px 22px;border-radius:12px;color:#10152c;font-weight:bold}
+.hero img{width:100%;height:390px;object-fit:cover;border-radius:25px;box-shadow:0 15px 60px #8c65ff35}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:clamp(28px,4vw,42px);margin-bottom:8px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#171f3b;border:1px solid #ffffff15;border-radius:18px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-7px);border-color:#45e0ff}
+.card img{width:100%;height:170px;object-fit:cover}
+.card div{padding:20px}
+.card h3{margin-bottom:8px}
+.card p{font-size:13px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about img{width:100%;height:330px;object-fit:cover;border-radius:22px}
+.about h2{font-size:35px;line-height:1.2;margin-bottom:15px}
+.about p{margin-bottom:13px}
+.banner{padding:45px 20px;border-radius:25px;text-align:center;background:linear-gradient(120deg,#2144a4,#702b9e,#087c99)}
+.banner h2{font-size:35px;margin-bottom:10px}
+footer{text-align:center;padding:30px;background:#11182c;border-top:1px solid #ffffff20}
+@media(max-width:800px){.hero,.about{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.hero img{height:280px}}
+@media(max-width:500px){.cards{grid-template-columns:1fr}.links{gap:10px}.links a{font-size:11px}section{padding:50px 0}.hero{padding-top:30px}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a class="logo" href="#bosh">⚙️ <span>NAVOIY ENGINEERING</span></a>
+<div class="links">
+<a href="#bosh">Bosh sahifa</a>
+<a href="#yonalishlar">Yo‘nalishlar</a>
+<a href="#biz">Biz haqimizda</a>
+<a href="#ustozlar">Ustozlar</a>
+<a href="#yangiliklar">Yangiliklar</a>
+<a href="#galereya">Galereya</a>
+</div>
+</nav>
+</header>
+<main>
+<section id="bosh">
+<div class="container hero">
+<div>
+<span class="tag">✦ NAVOIY SHAHRI · TA’LIM VA INNOVATSIYA</span>
+<h1>Kelajakni kutma. <span class="gradient">Uni o‘zing yarat!</span></h1>
+<p>Navoiy shahar Muhandislik maktabiga xush kelibsiz! Biz bilan ilm-fan, ijodkorlik va zamonaviy texnologiyalar olamini kashf eting.</p>
+<a class="btn" href="#yonalishlar">Yo‘nalishlarni ko‘r ↗</a>
+</div>
+<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1000&q=80" alt="Muhandislik laboratoriyasi">
+</div>
+</section>
+<section id="yonalishlar"><div class="container">
+<div class="heading"><h2>Bizning <span class="gradient">yo‘nalishlarimiz</span></h2><p>Kelajak uchun bilim va ko‘nikmalar.</p></div>
+<div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Matematika"><div><h3>📐 Matematika</h3><p>Mantiqiy fikrlash va murakkab masalalarni yechish.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Dasturlash"><div><h3>💻 Dasturlash</h3><p>Algoritmlar va zamonaviy saytlar yaratish.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="Fizika"><div><h3>🔬 Fizika</h3><p>Tabiat qonunlari va qiziqarli tajribalar.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80" alt="Ta'lim"><div><h3>🌍 Ingliz tili</h3><p>Dunyo bilan muloqot va yangi imkoniyatlar.</p></div></article>
+</div></div></section>
+<section id="biz"><div class="container about">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Amaliy mashg‘ulot">
+<div><h2>Har bir kashfiyot <span class="gradient">bir g‘oyadan</span> boshlanadi.</h2>
+<p>Muhandislik — muammolarni tushunish, yechim izlash va foydali narsalar yaratishga intilishdir.</p>
+<p>O‘rganish, savol berish va tajriba qilish orqali o‘z imkoniyatlarimizni rivojlantiramiz.</p>
+<p>🧠 Mustaqil fikrlash</p><p>🛠️ Amaliy loyihalar</p><p>🤝 Jamoaviy ish</p><p>🚀 Innovatsiya</p></div>
+</div></section>
+
+</main>
+</body>
+</html>
+
+<section id="ustozlar">
+<style>
+#ustozlar .teacher-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+}
+#ustozlar .teacher{
+background:#171f3b;
+border:1px solid #ffffff20;
+border-radius:15px;
+padding:17px;
+display:flex;
+align-items:center;
+gap:12px;
+transition:.3s;
+}
+#ustozlar .teacher:hover{
+transform:translateY(-5px);
+border-color:#45e0ff;
+}
+#ustozlar .avatar{
+width:44px;
+height:44px;
+flex-shrink:0;
+display:grid;
+place-items:center;
+border-radius:14px;
+background:linear-gradient(135deg,#45e0ff,#a477ff,#ff69d4);
+color:#11152c;
+font-weight:bold;
+}
+#ustozlar .teacher h3{font-size:13px}
+#ustozlar .teacher p{font-size:11px;color:#bdc7e2}
+#ustozlar .teacher-search{
+display:block;width:min(420px,100%);
+margin:0 auto 25px;padding:13px;
+border:1px solid #ffffff30;border-radius:12px;
+background:#171f3b;color:white;
+}
+#galereya .gallery{
+display:grid;grid-template-columns:repeat(3,1fr);gap:15px;
+}
+#galereya .gallery img{
+width:100%;height:220px;object-fit:cover;
+border-radius:17px;border:1px solid #ffffff20;
+transition:.3s;
+}
+#galereya .gallery img:hover{transform:scale(1.03)}
+#yangiliklar .news-grid{
+display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+}
+#yangiliklar .news-card{
+background:#171f3b;border:1px solid #ffffff20;
+border-radius:17px;overflow:hidden;
+}
+#yangiliklar .news-card img{
+width:100%;height:180px;object-fit:cover;
+}
+#yangiliklar .news-card div{padding:18px}
+#yangiliklar .news-card h3{margin:7px 0}
+#yangiliklar .news-card p{font-size:13px}
+#yangiliklar .news-card small{color:#45e0ff}
+@media(max-width:700px){
+#ustozlar .teacher-grid{grid-template-columns:repeat(2,1fr)}
+#galereya .gallery{grid-template-columns:repeat(2,1fr)}
+#yangiliklar .news-grid{grid-template-columns:1fr}
+}
+@media(max-width:430px){
+#ustozlar .teacher-grid{grid-template-columns:1fr}
+#galereya .gallery img{height:150px}
+}
+</style>
+
+<div class="container">
+<div class="heading">
+<h2>Bizning <span class="gradient">ustozlarimiz</span> 🌷</h2>
+<p>Bizga bilim berayotgan fidoyi ustozlarimiz.</p>
+</div>
+
+<input id="teacherSearch" class="teacher-search"
+type="search" placeholder="🔎 Ustozni qidirish...">
+
+<div class="teacher-grid" id="teacherGrid">
+<div class="teacher"><span class="avatar">OT</span><div><h3>Odilov Tuxtamurod</h3><p>Matematika</p></div></div>
+<div class="teacher"><span class="avatar">RR</span><div><h3>Ra’no Ruziqulova</h3><p>Informatika, robototexnika</p></div></div>
+<div class="teacher"><span class="avatar">OS</span><div><h3>Oybek Sulaymonov</h3><p>Matematika</p></div></div>
+<div class="teacher"><span class="avatar">RD</span><div><h3>Rahmatova Dilrabo</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">UX</span><div><h3>Umarov Xudoyorxon</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">DO</span><div><h3>Dilrabo Olimova</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">OS</span><div><h3>Ozoda Sa’dinova</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">AM</span><div><h3>Ashurova Marguba</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">MD</span><div><h3>Madina Davrobova</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">ZN</span><div><h3>Zafar Ne’matov</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">KB</span><div><h3>Komila Baxodirovna</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">AS</span><div><h3>Anvar Shodiyev</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">SA</span><div><h3>Shoxrux Abduxalilov</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">SU</span><div><h3>Sh. Fayzullayevna Umarova</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">AK</span><div><h3>Akmal</h3><p>Fizika</p></div></div>
+<div class="teacher"><span class="avatar">HZ</span><div><h3>Hudoyberdiyev Zuhriddin</h3><p>Fizika</p></div></div>
+<div class="teacher"><span class="avatar">ST</span><div><h3>Saodat Turdiyeva</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">DF</span><div><h3>Durdona Farxodovna</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">RK</span><div><h3>Ravshan Kobilov</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">J</span><div><h3>Jabborova</h3><p>Ustoz</p></div></div>
+<div class="teacher"><span class="avatar">Z</span><div><h3>Zebiniso</h3><p>Ustoz</p></div></div>
+</div>
+<p id="noTeacher" style="display:none;text-align:center;margin-top:20px">Ustoz topilmadi.</p>
+</div>
+</section>
+
+<section id="yangiliklar">
+<div class="container">
+<div class="heading">
+<h2>So‘nggi <span class="gradient">yangiliklar</span> 📰</h2>
+<p>Maktabimizdagi ilm-fan va ijod olami.</p>
+</div>
+<div class="news-grid">
+<article class="news-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=700&q=80" alt="Ta'lim tadbiri">
+<div><small>📚 TA’LIM</small><h3>Bilim sari qadam</h3><p>Bilim va ijodkorlik orqali yangi marralarni zabt etamiz.</p></div>
+</article>
+<article class="news-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=700&q=80" alt="Ilmiy tajribalar">
+<div><small>🔬 FAN</small><h3>Ilmiy tajribalar</h3><p>Amaliy mashg‘ulotlar orqali fan sirlarini o‘rganamiz.</p></div>
+</article>
+<article class="news-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=700&q=80" alt="Robot">
+<div><small>🤖 TEXNOLOGIYA</small><h3>Robototexnika olami</h3><p>Zamonaviy texnologiyalar bilan kelajak sari intilamiz.</p></div>
+</article>
+</div>
+<p style="font-size:11px;text-align:center;margin-top:18px">Eslatma: yangiliklar namunaviy. Haqiqiy xabarlar bilan almashtirishing mumkin.</p>
+</div>
+</section>
+
+<section id="galereya">
+<div class="container">
+<div class="heading">
+<h2>Bizning <span class="gradient">galereyamiz</span> 📸</h2>
+<p>Muhandislik va ilm-fan olamidan lavhalar.</p>
+</div>
+<div class="gallery">
+<img loading="lazy" src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80" alt="Muhandislik">
+<img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Elektronika">
+<img loading="lazy" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="Laboratoriya">
+<img loading="lazy" src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=600&q=80" alt="Ta'lim">
+<img loading="lazy" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80" alt="Robototexnika">
+<img loading="lazy" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80" alt="Amaliy mashg‘ulot">
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="banner">
+<h2>G‘oyadan — <span class="gradient">yechimga!</span> 🚀</h2>
+<p>Bugungi bilim — ertangi muvaffaqiyat.</p>
+<a class="btn" href="#bosh">Bosh sahifaga qaytish ↑</a>
+</div>
+</div>
+</section>
+
+
+<style>
+
+body.light-mode {
+  background: #f3f5ff;
+  color: #18213d;
+}
+
+body.light-mode header,
+body.light-mode footer {
+  background: #ffffffed;
+  color: #18213d;
+}
+
+body.light-mode .card,
+body.light-mode #ustozlar .teacher,
+body.light-mode #yangiliklar .news-card {
+  background: #ffffff;
+  border-color: #dce3f5;
+}
+
+body.light-mode p,
+body.light-mode .links a {
+  color: #56617d;
+}
+
+body.light-mode #ustozlar .teacher-search {
+  background: #ffffff;
+  color: #18213d;
+  border-color: #dce3f5;
+}
+
+body.light-mode .about h2,
+body.light-mode .heading h2 {
+  color: #18213d;
+}
+
+
+#imageViewer {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #050816ed;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+#imageViewer.open {
+  display: flex;
+}
+
+#imageViewer img {
+  max-width: 95%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 0 40px #45e0ff35;
+}
+
+#imageViewer button {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 32px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+#galereya .gallery img {
+  cursor: zoom-in;
+}
+
+#themeSwitch {
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(120deg,#45e0ff,#a477ff);
+  color: #10152c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#themeSwitch:hover {
+  transform: scale(1.05);
+}
+</style>
+
+<!-- Rejim tugmasi -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  
+  const nav = document.querySelector("nav");
+
+  if (nav && !document.getElementById("themeSwitch")) {
+    const themeButton = document.createElement("button");
+    themeButton.id = "themeSwitch";
+    themeButton.type = "button";
+    themeButton.textContent = "☀️";
+    themeButton.title = "Rang rejimini almashtirish";
+    themeButton.setAttribute("aria-label", "Rang rejimini almashtirish");
+    nav.appendChild(themeButton);
+
+    themeButton.addEventListener("click", function () {
+      document.body.classList.toggle("light-mode");
+
+      const light = document.body.classList.contains("light-mode");
+      themeButton.textContent = light ? "🌙" : "☀️";
+      themeButton.title = light ? "Tungi rejim" : "Kunduzgi rejim";
+    });
+  }
+
+  // 2. Ustozlarni qidirish
+  const search = document.getElementById("teacherSearch");
+  const teacherGrid = document.getElementById("teacherGrid");
+  const noTeacher = document.getElementById("noTeacher");
+
+  if (search && teacherGrid) {
+    search.addEventListener("input", function () {
+      const query = search.value
+        .trim()
+        .toLocaleLowerCase("uz-UZ");
+
+      const teachers = teacherGrid.querySelectorAll(".teacher");
+      let visible = 0;
+
+      teachers.forEach(function (teacher) {
+        const matches = teacher.textContent
+          .toLocaleLowerCase("uz-UZ")
+          .includes(query);
+
+        teacher.style.display = matches ? "flex" : "none";
+
+        if (matches) visible++;
+      });
+
+      if (noTeacher) {
+        noTeacher.style.display = visible === 0 ? "block" : "none";
+      }
+    });
+  }
+
+  const gallery = document.querySelector("#galereya .gallery");
+
+  if (gallery) {
+    const viewer = document.createElement("div");
+    viewer.id = "imageViewer";
+    viewer.setAttribute("role", "dialog");
+    viewer.setAttribute("aria-label", "Kattalashtirilgan rasm");
+
+    viewer.innerHTML = `
+      <button type="button" aria-label="Yopish">&times;</button>
+      <img src="" alt="Kattalashtirilgan galereya rasmi">
+    `;
+
+    document.body.appendChild(viewer);
+
+    const largeImage = viewer.querySelector("img");
+    const closeButton = viewer.querySelector("button");
+
+    gallery.querySelectorAll("img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        largeImage.src = img.src;
+        largeImage.alt = img.alt;
+        viewer.classList.add("open");
+        document.body.style.overflow = "hidden";
+        closeButton.focus();
+      });
+    });
+
+    function closeViewer() {
+      viewer.classList.remove("open");
+      document.body.style.overflow = "";
+      largeImage.src = "";
+    }
+
+    closeButton.addEventListener("click", closeViewer);
+
+    viewer.addEventListener("click", function (event) {
+      if (event.target === viewer) closeViewer();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeViewer();
+    });
+  }
+
+  
+  const footer = document.querySelector("footer");
+
+  if (footer) {
+    const year = footer.querySelector("#year");
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    } else {
+      const yearLabel = document.createElement("p");
+      yearLabel.textContent =
+        "© " + new Date().getFullYear() +
+        " Navoiy shahar Muhandislik maktabi";
+      footer.appendChild(yearLabel);
+    }
+  }
+  document.querySelectorAll('.links a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      const target = document.querySelector(link.getAttribute("href"));
+
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+
+});
+</script>
+
+
